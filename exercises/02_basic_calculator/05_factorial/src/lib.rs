@@ -10,6 +10,13 @@
 //
 // Use only what you learned! No loops yet, so you'll have to use recursion!
 
+pub fn factorial(value: i32) -> i32 {
+    if value <= 1{
+        return 1;
+    }
+    value * factorial(value - 1)
+}
+
 #[cfg(test)]
 mod tests {
     use crate::factorial;
